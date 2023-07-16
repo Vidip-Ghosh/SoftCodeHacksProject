@@ -3,7 +3,10 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar/Navbar';
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom';
+
 export default function Login() {
+  const navigate = useNavigate()
   const [credentials,setcredentials] = useState({email:"",password:""})
   const handleSubmit = async(e)=>{
     e.preventDefault();
@@ -13,9 +16,9 @@ export default function Login() {
         "password": credentials['password']
       })
       .then(res=>{
-        if(res.data=="exist")
+        if(res.data=="Exist")
         {
-          history('/home',{state:{id:credentials['email']}})
+          navigate('/',{state:{id:credentials['email']}})
         }
         else if(res.data=="NotExist")
         {

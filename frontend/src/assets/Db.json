@@ -1,0 +1,298 @@
+[
+  {
+    "States&UT": "Andaman & NicobarIslands",
+    "PHC": 27,
+    "CHC": 4,
+    "SDH": 0,
+    "DH": 3,
+    "Total": 34
+  },
+  {
+    "States&UT": "Andhra Pradesh",
+    "PHC": 1417,
+    "CHC": 198,
+    "SDH": 31,
+    "DH": 20,
+    "Total": 1666
+  },
+  { 
+    "States&UT": "Arunachal Pradesh",
+    "PHC": 122,
+    "CHC": 62,
+    "SDH": 0,
+    "DH": 15,
+    "Total": 199
+  },
+  {
+    "States&UT": "Assam",
+    "PHC": 1007,
+    "CHC": 166,
+    "SDH": 14,
+    "DH": 33,
+    "Total": 1220
+  },
+  {
+    "States&UT": "Bihar",
+    "PHC": 2007,
+    "CHC": 63,
+    "SDH": 33,
+    "DH": 43,
+    "Total": 2146
+  },
+  {
+    "States&UT": "Chandigarh",
+    "PHC": 40,
+    "CHC": 2,
+    "SDH": 1,
+    "DH": 4,
+    "Total": 47
+  },
+  {
+    "States&UT": "Chhattisgarh",
+    "PHC": 813,
+    "CHC": 166,
+    "SDH": 12,
+    "DH": 32,
+    "Total": 1023
+  },
+  {
+    "States&UT": "Dadra & Nagar Haveli",
+    "PHC": 9,
+    "CHC": 2,
+    "SDH": 1,
+    "DH": 1,
+    "Total": 13
+  },
+  {
+    "States&UT": "Daman & Diu",
+    "PHC": 4,
+    "CHC": 2,
+    "SDH": 0,
+    "DH": 2,
+    "Total": 8
+  },
+  {
+    "States&UT": "Delhi",
+    "PHC": 534,
+    "CHC": 25,
+    "SDH": 9,
+    "DH": 47,
+    "Total": 615
+  },
+  {
+    "States&UT": "Goa",
+    "PHC": 31,
+    "CHC": 4,
+    "SDH": 2,
+    "DH": 3,
+    "Total": 40
+  },
+  {
+    "States&UT": "Gujarat",
+    "PHC": 1770,
+    "CHC": 385,
+    "SDH": 44,
+    "DH": 37,
+    "Total": 2236
+  },
+  {
+    "States&UT": "Haryana",
+    "PHC": 500,
+    "CHC": 131,
+    "SDH": 24,
+    "DH": 28,
+    "Total": 683
+  },
+  {
+    "States&UT": "Himachal Pradesh",
+    "PHC": 516,
+    "CHC": 79,
+    "SDH": 61,
+    "DH": 15,
+    "Total": 671
+  },
+  {
+    "States&UT": "Jammu & Kashmir",
+    "PHC": 702,
+    "CHC": 87,
+    "SDH": 0,
+    "DH": 29,
+    "Total": 818
+  },
+  {
+    "States&UT": "Jharkhand",
+    "PHC": 343,
+    "CHC": 179,
+    "SDH": 13,
+    "DH": 23,
+    "Total": 558
+  },
+  {
+    "States&UT": "Karnataka",
+    "PHC": 2547,
+    "CHC": 207,
+    "SDH": 147,
+    "DH": 42,
+    "Total": 2943
+  },
+  {
+    "States&UT": "Kerala",
+    "PHC": 933,
+    "CHC": 229,
+    "SDH": 82,
+    "DH": 53,
+    "Total": 1297
+  },
+  {
+    "States&UT": "Lakshadweep",
+    "PHC": 4,
+    "CHC": 3,
+    "SDH": 2,
+    "DH": 1,
+    "Total": 10
+  },
+  {
+    "States&UT": "Madhya Pradesh",
+    "PHC": 1420,
+    "CHC": 324,
+    "SDH": 72,
+    "DH": 51,
+    "Total": 1867
+  },
+  {
+    "States&UT": "Maharashtra",
+    "PHC": 2638,
+    "CHC": 430,
+    "SDH": 101,
+    "DH": 70,
+    "Total": 3239
+  },
+  {
+    "States&UT": "Manipur",
+    "PHC": 87,
+    "CHC": 17,
+    "SDH": 1,
+    "DH": 9,
+    "Total": 114
+  },
+  {
+    "States&UT": "Meghalaya",
+    "PHC": 138,
+    "CHC": 29,
+    "SDH": 0,
+    "DH": 13,
+    "Total": 180
+  },
+  {
+    "States&UT": "Mizoram",
+    "PHC": 65,
+    "CHC": 10,
+    "SDH": 3,
+    "DH": 9,
+    "Total": 87
+  },
+  {
+    "States&UT": "Nagaland",
+    "PHC": 134,
+    "CHC": 21,
+    "SDH": 0,
+    "DH": 11,
+    "Total": 166
+  },
+  {
+    "States&UT": "Odisha",
+    "PHC": 1360,
+    "CHC": 377,
+    "SDH": 27,
+    "DH": 35,
+    "Total": 1799
+  },
+  {
+    "States&UT": "Puducherry",
+    "PHC": 40,
+    "CHC": 4,
+    "SDH": 5,
+    "DH": 4,
+    "Total": 53
+  },
+  {
+    "States&UT": "Punjab",
+    "PHC": 521,
+    "CHC": 146,
+    "SDH": 47,
+    "DH": 28,
+    "Total": 742
+  },
+  {
+    "States&UT": "Rajasthan",
+    "PHC": 2463,
+    "CHC": 579,
+    "SDH": 64,
+    "DH": 33,
+    "Total": 3139
+  },
+  {
+    "States&UT": "Sikkim",
+    "PHC": 25,
+    "CHC": 2,
+    "SDH": 1,
+    "DH": 4,
+    "Total": 32
+  },
+  {
+    "States&UT": "TamilNadu",
+    "PHC": 1854,
+    "CHC": 385,
+    "SDH": 310,
+    "DH": 32,
+    "Total": 2581
+  },
+  {
+    "States&UT": "Telangana",
+    "PHC": 788,
+    "CHC": 82,
+    "SDH": 47,
+    "DH": 15,
+    "Total": 932
+  },
+  {
+    "States&UT": "Tripura",
+    "PHC": 114,
+    "CHC": 22,
+    "SDH": 12,
+    "DH": 9,
+    "Total": 157
+  },
+  {
+    "States&UT": "Uttar Pradesh",
+    "PHC": 3277,
+    "CHC": 671,
+    "SDH": 0,
+    "DH": 174,
+    "Total": 4122
+  },
+  {
+    "States&UT": "Uttarakhand",
+    "PHC": 275,
+    "CHC": 69,
+    "SDH": 19,
+    "DH": 20,
+    "Total": 383
+  },
+  {
+    "States&UT": "West Bengal",
+    "PHC": 1374,
+    "CHC": 406,
+    "SDH": 70,
+    "DH": 55,
+    "Total": 1905
+  },
+  {
+    "States&UT": "All India",
+    "PHC": "29,899",
+    "CHC": "5,568",
+    "SDH": "1,255",
+    "DH": "1,003",
+    "Total": "37,725"
+  }
+]

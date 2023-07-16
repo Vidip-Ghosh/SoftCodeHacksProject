@@ -6,6 +6,7 @@ import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
 import Contact from "./Pages/Contact";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import CheckAvailabilityPage from './Pages/CheckAvailabilityPage';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: '/contact-form',
     element: <Contact/>
+  },
+  {
+    path: '/check-availability',
+    element: <CheckAvailabilityPage/>
   }
 ])
 
