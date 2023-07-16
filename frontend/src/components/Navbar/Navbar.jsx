@@ -1,37 +1,34 @@
-import React from "react"
 import { Link } from "react-router-dom"
 
 const Navbar = () => {
     return (
         <div>
-
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <Link class="navbar-brand" to="/">CardioCare</Link>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                <div className="container-fluid">
+                    <Link className="navbar-brand" to="/">CardioCare</Link>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
+                    <div className="collapse navbar-collapse" id="navbarNav">
+                        <ul className="navbar-nav">
 
-                            <li class="nav-item">
-                                <Link class="nav-link" to="#">Check Availability</Link>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="#">Check Availability</Link>
                             </li>
-                            <li class="nav-item">
-                                <Link class="nav-link" to="/Contact">Contact Me</Link>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/contact-form">Contact Me</Link>
                             </li>
-                            <li class="nav-item">
-                                <Link class="nav-link" to="/Login">Login</Link>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/login">Login</Link>
                             </li>
-                            <li class="nav-item">
-                                <Link class="nav-link" to="/Signup">Signup</Link>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/signup">Signup</Link>
                             </li>
-
                         </ul>
                     </div>
                 </div>
             </nav>
-            </div>
+        </div>
     )
 }
-            export default Navbar
+export default Navbar

@@ -7,6 +7,9 @@ const jwt = require('jsonwebtoken');
 require('dotenv').config();
 const collection = require('./db/db')
 const bcrypt = require('bcryptjs')
+const contactDB = require('./db/contactDB')
+const bodyParser = require('body-parser')
+const nodemailer = require('nodemailer')
 
 app.get('/', (req, res) => {
   res.json({"message":"Hello from the server"})
@@ -69,4 +72,32 @@ app.post('/signup',async(req,res)=>{
         console.log('User has been created');
         return res.status(200).json('User created successfully!');
     }
+})
+
+app.post('/contact-form',(req,res)=>{
+    const {name,email,message} = req.body;
+    var transporter = nodemailer.createTransport({
+        service: "gmail",
+        auth: {
+            user: process.env.EMAIL,
+            pass: process.env.PASSWORD
+        }
+    })
+    var mailOptions = {
+        from: process.env.EMAIL,
+        to: req.body.name,
+        subject: 'Thanks for the feedback' + name,
+        text: `Thank you ${name} for your message you have sent to us ${message}`
+    }
+    transporter.sendMail(mailOptions, (err,info)=>{
+        if(err)
+        {
+            console.log('Err');
+        }
+        else
+        {
+            res.redirect('/')
+            console.log('Email sent successful' + info.response);
+        }
+    })
 })
