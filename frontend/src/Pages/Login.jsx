@@ -32,7 +32,8 @@ export default function Login() {
   return (
     <div>
       <div> <Navbar /></div>
-      <div className='container'>
+      
+      <div className='container '>
       <form onSubmit={handleSubmit}>
       <div className="mb-3">
       <label htmlFor="name" className="form-label">Name</label>
