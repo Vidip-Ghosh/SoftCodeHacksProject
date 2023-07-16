@@ -1,15 +1,17 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
-app.use(cors());
-app.use(express.json())
 const jwt = require('jsonwebtoken');
 require('dotenv').config();
 const collection = require('./db/db')
 const bcrypt = require('bcryptjs')
-const contactDB = require('./db/contactDB')
+// const contactDB = require('./db/contactDB')
 const bodyParser = require('body-parser')
 const nodemailer = require('nodemailer')
+
+app.use(cors());
+app.use(express.json())
+app.use(express.urlencoded({extended: true}))
 
 app.get('/', (req, res) => {
   res.json({"message":"Hello from the server"})
@@ -25,9 +27,18 @@ app.post('/login',async(req,res)=>{
     const {username,password} = req.body;
     const user = await collection.findOne({username})
 
-    if(!user)
-    {
-        return res.status(401).json("Invalid email or password!")
+    try {
+        if(!user)
+        {
+            return res.status(401).json("NotExist")
+        }
+        else
+        {
+            return res.json("Exist")
+        }
+    } catch (error) {
+        console.log(error);
+        res.json('fail')
     }
 
     // checking if password is correct
@@ -61,6 +72,20 @@ app.post('/signup',async(req,res)=>{
         username,
         password: securedPassword
     })
+    try {
+        const check = await collection.findOne({username:username})
+        if(check)
+        {
+            res.json("exist")
+        }
+        else
+        {
+            res.json("NotExist")
+            await collection.insertMany([data])
+        }
+    } catch (error) {
+        console.log(error);
+    }
     const userCreated = await newUser.save()
     if(!userCreated)
     {
@@ -75,12 +100,23 @@ app.post('/signup',async(req,res)=>{
 })
 
 app.post('/contact-form',(req,res)=>{
-    const {name,email,message} = req.body;
-    var transporter = nodemailer.createTransport({
+    const name = req.body.name;
+    const email = req.body.email;
+    const message = req.body.message;
+    var contactEmail = nodemailer.createTransport({
         service: "gmail",
         auth: {
             user: process.env.EMAIL,
             pass: process.env.PASSWORD
+        }
+    })
+    contactEmail.verify((error)=>{
+        if (error) 
+        {
+            console.log(error);
+        } 
+        else {
+            console.log("Ready to Send");
         }
     })
     var mailOptions = {
@@ -89,14 +125,15 @@ app.post('/contact-form',(req,res)=>{
         subject: 'Thanks for the feedback' + name,
         text: `Thank you ${name} for your message you have sent to us ${message}`
     }
-    transporter.sendMail(mailOptions, (err,info)=>{
+    contactEmail.sendMail(mailOptions, (err,info)=>{
         if(err)
         {
-            console.log('Err');
+            res.json({ status: "ERROR" });
+            console.log('Error');
         }
         else
         {
-            res.redirect('/')
+            res.json({ status: "Message Sent" });
             console.log('Email sent successful' + info.response);
         }
     })

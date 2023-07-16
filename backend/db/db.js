@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost:27017/hospital-management-system').then(()=>{
-    console.log('Connected to database');
+require('dotenv').config();
+mongoose.connect(process.env.MONGO_URL).then(()=>{
+    console.log('Connected to Main database');
 })
 .catch(()=>{
     console.log('Error');

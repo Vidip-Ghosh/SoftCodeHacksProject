@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 mongoose.connect('mongodb://localhost:27017/contact-form').then(()=>{
-    console.log('Connected to database');
+    console.log('Connected to Contact database');
 })
 .catch(()=>{
     console.log('Error');
